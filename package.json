@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-american-samoa-code",
+  "version": "0.1.0",
+  "description": "American Samoa Code Annotated (A.S.C.A.) — section lookup by citation and",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-american-samoa-code": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "american-samoa-code"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-american-samoa-code.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-bc846dd48827f5adc104b4dcfc956a7ffee58c693cdae9402da2757bc9d16570",
+    "sourceCommit": "051ee2039fc96224cb5b7358fd69d525bced13a6"
+  }
+}

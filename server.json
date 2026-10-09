@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/american-samoa-code",
+  "title": "American Samoa Code",
+  "description": "American Samoa Code Annotated (A.S.C.A.) — section lookup by citation and",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/american-samoa-code",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-american-samoa-code",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/american-samoa-code/mcp"
+    }
+  ]
+}
