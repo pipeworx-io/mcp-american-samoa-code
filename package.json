@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-american-samoa-code",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "American Samoa Code Annotated (A.S.C.A.) — section lookup by citation and topic/keyword search (fleet #2891, after the 50-state code gap #2881/ #2883-#2885: DC and the five inhabited US territories had no code pack).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-2c4f6bef8b11f470d866c2911d4da5ad9a241f8dc2241bf04280dbb76e5c3d24",
-    "sourceCommit": "3723e46c6d115bd4a1fd2175e6bf758555e7cb50"
+    "sourceHash": "v1-dc44f971634c8d59c7636989daa95155e53ca6aaf13963cecd3e6b4ebbc8821b",
+    "sourceCommit": "351c40908821cfecc9bb2f5849d87bbfdbb26d75"
   }
 }
