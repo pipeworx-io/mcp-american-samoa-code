@@ -11,7 +11,7 @@ import * as bakedIndexModule from './as-index-data.js';
 const bakedIndex = Object.fromEntries(Object.entries(bakedIndexModule));
 
 const server = new Server(
-  { name: '@pipeworx/mcp-american-samoa-code', version: '0.1.2' },
+  { name: '@pipeworx/mcp-american-samoa-code', version: '0.1.3' },
   { capabilities: { tools: {} } },
 );
 
