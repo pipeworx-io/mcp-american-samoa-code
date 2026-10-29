@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-american-samoa-code",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "American Samoa Code Annotated (A.S.C.A.) — section lookup by citation and topic/keyword search (fleet #2891, after the 50-state code gap #2881/ #2883-#2885: DC and the five inhabited US territories had no code pack).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-american-samoa-code": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "american-samoa-code"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-american-samoa-code.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/american-samoa-code",
   "pipeworx": {
-    "sourceHash": "v1-1083ce431ddb05308d26a74ef9ac5dedd47bacbd8147883efebe407ea56b2a65",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "american-samoa-code",
+    "gatewaySlug": "american-samoa-code",
+    "sourceHash": "v1-85060f12aeda526c0f553e482802c7f5e7d686001437342139cc52605b52a3d8",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }

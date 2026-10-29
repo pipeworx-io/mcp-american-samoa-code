@@ -1,0 +1,46 @@
+[
+  {
+    "name": "as_statute",
+    "description": "Get the FULL TEXT of a section of the American Samoa Code Annotated (A.S.C.A.) by citation, e.g. \"46.3502\" (Murder in the 1st degree) or \"1.0201\" (laws applicable in American Samoa). Accepts \"46.3502\", \"A.S.C.A. § 46.3502\", \"ASCA 46-3502\", or \"Title 46, Section 3502\". Returns the current statutory text, its chapter, any amendment \"History:\" citation, and any \"Case Notes:\" (case-law annotations) asbar.org publishes for that section. Keyless. Use for \"what does A.S.C.A. 46.3502 say\", \"American Samoa murder statute\", or to check an American Samoa statute a case or contract relies on.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "citation": {
+          "type": "string",
+          "description": "Section citation as title.section, e.g. \"46.3502\" or \"1.0201\". The title is the part before the first separator."
+        }
+      },
+      "required": [
+        "citation"
+      ]
+    }
+  },
+  {
+    "name": "as_search",
+    "description": "Search the American Samoa Code Annotated by TOPIC or keyword rather than citation, e.g. \"domestic violence\", \"limitation of liability\", \"entitlement to vote\". Returns matching citations, headings, and the section URL. Call as_statute with a result's citation for the full text. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Topic or keywords, e.g. \"domestic violence\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results to return, default 10, max 30."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "as_titles",
+    "description": "List all 38 published titles of the American Samoa Code Annotated with their official names, e.g. Title 46 is Criminal Justice, Title 42 is Domestic Relations. Routing help for when you know the subject but not the title number — call this or as_search before guessing a citation. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
